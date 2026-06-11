@@ -2,8 +2,8 @@ const { Events } = require('discord.js');
 
 // IDs of users that cannot be pinged
 const protectedUsers = [
-    '123456789012345678', // Replace with User ID
-    '987654321098765432'
+    '1442177255672381592', // Replace with User ID
+    '1420814403472719963'
 ];
 
 module.exports = {
