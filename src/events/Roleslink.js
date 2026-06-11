@@ -1,22 +1,22 @@
 // When switching to City
 
-// Save Fallout job
-const falloutJobs = [doctorRole, raiderRole, traderRole];
+// Save prison job
+const prisonJobs = [Guard,Medic];
 
 const currentJob = member.roles.cache.find(r =>
-    falloutJobs.includes(r.id)
+    prisonJobs.includes(r.id)
 );
 
 if (currentJob) {
-    userData[user.id].fallout = currentJob.id;
+    userData[user.id].prison = currentJob.id;
 }
 
 // Remove Fallout roles
-await member.roles.remove(falloutJobs);
-await member.roles.remove(falloutMemberRole);
+await member.roles.remove(prisonJobs);
+await member.roles.remove(PrisonMember);
 
 // Add City member
-await member.roles.add(cityMemberRole);
+await member.roles.add(cityMember);
 
 // Restore City job
 if (userData[user.id].city) {
