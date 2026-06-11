@@ -35,3 +35,6 @@ module.exports = {
         }
     }
 };
+client.on('messageCreate', async (message) => {
+    // Event code
+});
