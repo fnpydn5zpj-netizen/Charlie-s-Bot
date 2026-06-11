@@ -11,7 +11,7 @@ if (currentJob) {
     userData[user.id].prison = currentJob.id;
 }
 
-// Remove Fallout roles
+// Remove Prison roles
 await member.roles.remove(prisonJobs);
 await member.roles.remove(PrisonMember);
 
