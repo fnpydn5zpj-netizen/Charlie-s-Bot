@@ -4,6 +4,7 @@ const { Events } = require('discord.js');
 const protectedUsers = [
     '1442177255672381592', // Replace with User ID
     '1420814403472719963'
+    '1420814403472719963'
 ];
 
 module.exports = {
